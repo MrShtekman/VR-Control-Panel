@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6EA18EEE-E71E-FBB6-4B76-9DFEDB9460A5}</ProjectGuid>
+    <ProjectGuid>{A91EF086-28EF-FC48-F488-C123B9AB55ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.Samples.Editor</AssemblyName>
@@ -296,6 +296,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -304,9 +307,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -674,15 +674,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Interaction.Editor.csproj">
-      <Project>{4CF5829F-1258-271C-C3C1-D721FBA4106F}</Project>
+      <Project>{899BD6C6-183C-EAB8-E86E-7D79E8761752}</Project>
       <Name>Oculus.Interaction.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{E5E9588D-1AE8-9AAE-C5A7-0849F56EF7F9}</Project>
+      <Project>{D1769CC4-EAC5-655A-74D5-A02FEA479339}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Samples.csproj">
-      <Project>{4E9B05B1-DB30-2B68-7059-A3FDC1EB0915}</Project>
+      <Project>{4AC71479-5209-A44E-2A8B-4921DD944C66}</Project>
       <Name>Oculus.Interaction.Samples</Name>
     </ProjectReference>
   </ItemGroup>

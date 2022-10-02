@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{95803943-8F34-781F-09EE-5C7A7E87EB77}</ProjectGuid>
+    <ProjectGuid>{3E579FE2-893C-2E37-B8C4-ABD287C3FC35}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Facebook.Wit.Editor</AssemblyName>
@@ -57,29 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitParameterValidator.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitTexts.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\ConfidenceRangeDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\WitDataCreation.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitPropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\CallbackHandlers\SimpleStringEntityHandlerEditor.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\CallbackHandlers\SimpleIntentHandlerEditor.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitTraitPropertyDrawer.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Inspectors\WitServiceInspector.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitConfigurationPostprocessor.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitEndpointConfigDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitConfigurationUtility.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitStyles.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\BaseWitWindow.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Utility\WitUnderstandingViewer.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitIntentPropertyDrawer.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\WitScriptableWizard.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Lib\Mic\MicEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\WitWindowUtility.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitWindow.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Inspectors\WitInspector.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitTraitValuePropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitWelcomeWizard.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitConfigurationEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitEntityPropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitSimplePropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\FieldGUI.cs" />
@@ -88,9 +74,23 @@
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitEntityRolePropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\WitConfigurationWindow.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\CallbackHandlers\ValuePathMatcherPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitApplicationPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitTexts.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\CallbackHandlers\SimpleIntentHandlerEditor.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitTraitPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Inspectors\WitServiceInspector.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitStyles.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\BaseWitWindow.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Utility\WitUnderstandingViewer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitIntentPropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\WitScriptableWizard.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Lib\Mic\MicEditor.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitWindow.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitTraitValuePropertyDrawer.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Data\Configuration\WitConfigurationEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitConfigurationEditorUI.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\WitEditorUI.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Windows\PropertyDrawers\WitApplicationPropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts\Editor\Facebook.Wit.Editor.asmdef" />
@@ -330,6 +330,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -338,9 +341,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -708,15 +708,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{A7F68D6F-858E-C9A3-29E2-3873B1B61E0F}</Project>
+      <Project>{4718B916-AAD1-069A-1535-C9C615BA969B}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Conduit.csproj">
-      <Project>{8A425E24-BE89-6592-C3ED-5FD82D0E4BB5}</Project>
+      <Project>{E3FD698D-CEAE-758E-F1EE-2AC3C6ADBB2B}</Project>
       <Name>Facebook.Wit.Conduit</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Conduit.Editor.csproj">
-      <Project>{B0C4F0B1-2500-66ED-986D-13CCD86B769A}</Project>
+      <Project>{0DCA68E5-D410-D182-704B-EAAA4FCCBDE4}</Project>
       <Name>Facebook.Wit.Conduit.Editor</Name>
     </ProjectReference>
   </ItemGroup>

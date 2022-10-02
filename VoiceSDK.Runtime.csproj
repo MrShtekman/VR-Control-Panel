@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B685FFDF-E022-7D11-B521-F0CCDC49B58E}</ProjectGuid>
+    <ProjectGuid>{D449F8BA-8035-33F1-D518-7AE16C630B34}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VoiceSDK.Runtime</AssemblyName>
@@ -56,19 +56,19 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKConfigBinding.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Service\AppBuiltIns.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Interfaces\IPlatformVoiceService.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKBinding.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\IVCBindingEvents.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKPlatformLoggerImpl.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKListenerBinding.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Service\AppVoiceExperience.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKImpl.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Utilities\MicPermissionsManager.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Interfaces\IVoiceSDKLogger.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKConsoleLoggerImpl.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKLoggerBinding.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\VoiceSDKConfigBinding.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Bindings\Android\IVCBindingEvents.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Utilities\MicPermissionsManager.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Runtime\Interfaces\IVoiceSDKLogger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\Voice\Scripts\Runtime\VoiceSDK.Runtime.asmdef" />
@@ -308,6 +308,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -316,9 +319,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>Z:\Program Files\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -674,15 +674,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{9666FE5E-EA5D-C074-2027-63A554BB1672}</Project>
+      <Project>{0D16ED7E-B344-C831-727E-300A58DD0E23}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{A7F68D6F-858E-C9A3-29E2-3873B1B61E0F}</Project>
+      <Project>{4718B916-AAD1-069A-1535-C9C615BA969B}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Conduit.csproj">
-      <Project>{8A425E24-BE89-6592-C3ED-5FD82D0E4BB5}</Project>
+      <Project>{E3FD698D-CEAE-758E-F1EE-2AC3C6ADBB2B}</Project>
       <Name>Facebook.Wit.Conduit</Name>
     </ProjectReference>
   </ItemGroup>

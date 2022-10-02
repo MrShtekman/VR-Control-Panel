@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1FAB2159-24B6-B543-846E-0EE43C0D2FE7}</ProjectGuid>
+    <ProjectGuid>{F5A9141B-F407-4CFA-B384-11E4742A7294}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.InterfaceSupport</AssemblyName>
@@ -56,8 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\Interaction\Runtime\ThirdParty\InterfaceSupport\Editor\InterfacePicker.cs" />
     <Compile Include="Assets\Oculus\Interaction\Runtime\ThirdParty\InterfaceSupport\Editor\InterfaceDrawer.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Runtime\ThirdParty\InterfaceSupport\Editor\InterfacePicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\Interaction\Runtime\ThirdParty\InterfaceSupport\Editor\Oculus.Interaction.InterfaceSupport.asmdef" />
@@ -297,6 +297,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -305,9 +308,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -675,7 +675,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{E5E9588D-1AE8-9AAE-C5A7-0849F56EF7F9}</Project>
+      <Project>{D1769CC4-EAC5-655A-74D5-A02FEA479339}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
   </ItemGroup>

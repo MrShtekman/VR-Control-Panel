@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B0C4F0B1-2500-66ED-986D-13CCD86B769A}</ProjectGuid>
+    <ProjectGuid>{0DCA68E5-D410-D182-704B-EAAA4FCCBDE4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Facebook.Wit.Conduit.Editor</AssemblyName>
@@ -56,17 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IParameterValidator.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IConduitAssembly.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyMiner.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyWalker.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyInfo.cs" />
+    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IParameterValidator.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IAssemblyMiner.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ManifestGenerator.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyWalker.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ConduitStatistics.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\PersistenceLayer.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ConduitAssembly.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IAssemblyWalker.cs" />
-    <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyInfo.cs" />
     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IPersistenceLayer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +307,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -315,9 +318,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -685,11 +685,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Facebook.Wit.Conduit.csproj">
-      <Project>{8A425E24-BE89-6592-C3ED-5FD82D0E4BB5}</Project>
+      <Project>{E3FD698D-CEAE-758E-F1EE-2AC3C6ADBB2B}</Project>
       <Name>Facebook.Wit.Conduit</Name>
     </ProjectReference>
     <ProjectReference Include="LitJson.csproj">
-      <Project>{31BD3ABD-832E-E1B0-664A-DEB86B27F3A4}</Project>
+      <Project>{9C7E298F-911C-1273-D81B-90254600D76A}</Project>
       <Name>LitJson</Name>
     </ProjectReference>
   </ItemGroup>

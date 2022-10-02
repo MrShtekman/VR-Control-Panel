@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{079DBADA-3E7A-AFDD-3236-2868B1FC510A}</ProjectGuid>
+    <ProjectGuid>{26A23DD1-9B49-2B18-AB45-3228525B0CB4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VoiceSDK.Editor</AssemblyName>
@@ -57,14 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Data\VoiceSDKDataCreation.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\SettingsWindow.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Inspectors\AppVoiceExperienceWitConfigurationEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Utility\VoiceSDKStyles.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Utility\VoiceSDKMenu.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\WelcomeWizard.cs" />
-    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Inspectors\AppVoiceExperienceEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Upgrade\WitUpgrader.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\UnderstandingViewerWindow.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\SettingsWindow.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Inspectors\AppVoiceExperienceWitConfigurationEditor.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\WelcomeWizard.cs" />
+    <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Inspectors\AppVoiceExperienceEditor.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\AboutWindow.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Utility\VoiceSDKVersion.cs" />
     <Compile Include="Assets\Oculus\Voice\Scripts\Editor\Windows\VoiceApplicationDetailProvider.cs" />
@@ -308,6 +308,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -316,9 +319,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -686,19 +686,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{B685FFDF-E022-7D11-B521-F0CCDC49B58E}</Project>
+      <Project>{D449F8BA-8035-33F1-D518-7AE16C630B34}</Project>
       <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{A7F68D6F-858E-C9A3-29E2-3873B1B61E0F}</Project>
+      <Project>{4718B916-AAD1-069A-1535-C9C615BA969B}</Project>
       <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{95803943-8F34-781F-09EE-5C7A7E87EB77}</Project>
+      <Project>{3E579FE2-893C-2E37-B8C4-ABD287C3FC35}</Project>
       <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.TTS.Editor.csproj">
-      <Project>{6F299E99-DC89-9EC6-BB0B-5351C875300F}</Project>
+      <Project>{5B904A4B-9E24-246B-C57F-990F4876F3B4}</Project>
       <Name>Facebook.Wit.TTS.Editor</Name>
     </ProjectReference>
   </ItemGroup>

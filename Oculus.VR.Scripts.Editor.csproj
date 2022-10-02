@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EB4CEE64-921D-266F-7254-72E55163470F}</ProjectGuid>
+    <ProjectGuid>{ED9F81D8-D7F6-FE01-08AC-09B6B2B92E27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.VR.Scripts.Editor</AssemblyName>
@@ -56,13 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRProfilerDeprecated.cs" />
-    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OculusXRFeatureEnabler.cs" />
-    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRCustomSkeletonEditor.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRProjectConfigEditor.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVREditorUtil.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRPassthroughLayerEditor.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVROverlayEditor.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRProfilerDeprecated.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OculusXRFeatureEnabler.cs" />
+    <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRCustomSkeletonEditor.cs" />
     <Compile Include="Assets\Oculus\VR\Scripts\Editor\OVRManagerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -305,6 +305,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -313,9 +316,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -683,11 +683,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{0A35EBC6-5E02-5DC4-64CB-87552304231E}</Project>
+      <Project>{EF9930EA-E73A-56AA-74AA-F2B9D4AA5718}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{F09B1AD1-D860-802C-2D79-3FA1032EBDD8}</Project>
+      <Project>{27A7736B-CC85-D671-D1A9-E55CEED8CEAC}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
   </ItemGroup>

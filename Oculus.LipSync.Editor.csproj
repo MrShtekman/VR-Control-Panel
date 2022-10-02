@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E79A528F-7754-6AEE-DEA6-1DA3E93E0489}</ProjectGuid>
+    <ProjectGuid>{62B8FE46-588E-046C-5420-CDEE70B796BC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.LipSync.Editor</AssemblyName>
@@ -56,8 +56,8 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncContextMorphTargetEditor.cs" />
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncBuildPostProcessor.cs" />
+    <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncContextMorphTargetEditor.cs" />
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRNamedArrayPropertyDrawer.cs" />
     <Compile Include="Assets\Oculus\LipSync\Editor\OVRLipSyncTool.cs" />
   </ItemGroup>
@@ -299,6 +299,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -307,9 +310,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -677,7 +677,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{0CCE483B-2A50-0A26-3650-85205F9AFB58}</Project>
+      <Project>{E9BC9471-C0AC-9E32-FEB6-71E70888AD79}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
   </ItemGroup>

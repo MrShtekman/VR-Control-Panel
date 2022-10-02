@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3D8C3A8-6361-DA53-1043-C75C857BD3E1}</ProjectGuid>
+    <ProjectGuid>{B695985F-B518-BBCF-2C57-D0A94C2B1C37}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.AudioManager</AssemblyName>
@@ -56,16 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager_Sound.cs" />
-    <Compile Include="Assets\Oculus\AudioManager\Scripts\Utils\FastList.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\SoundFXRef.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\SoundFX.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Oculus\AudioManager\Scripts\Utils\FastList.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Utils\InspectorNoteAttribute.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\MinMaxAttribute.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\SoundEmitter.cs" />
-    <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\AudioManager\Oculus.AudioManager.asmdef" />
@@ -305,6 +305,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -313,9 +316,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>Z:\Program Files\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -671,7 +671,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{3B6B9ADE-1928-76DF-0770-A17B0CEBD443}</Project>
+      <Project>{D5FCABEB-643D-A120-5A98-27CCB2DEC8C8}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
   </ItemGroup>

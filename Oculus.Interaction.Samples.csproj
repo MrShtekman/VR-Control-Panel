@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4E9B05B1-DB30-2B68-7059-A3FDC1EB0915}</ProjectGuid>
+    <ProjectGuid>{4AC71479-5209-A44E-2A8B-4921DD944C66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Oculus.Interaction.Samples</AssemblyName>
@@ -59,25 +59,25 @@
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\ScaleModifier.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabRecord\TimerUIControl.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\SceneLoader.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabRecord\HandGrabPoseLiveRecorder.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Rendering\BasicPBRGlobals.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\CarouselView.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\ColorChanger.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\RotationAudioEvents.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\ScaleAudioEvents.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\PoseUseSample.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\LookAtTarget.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\ShouldHideHandOnGrab.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Effects\MeshBlit.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\CountdownTimer.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\FadeTextAfterActive.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabRecord\HandGrabPoseLiveRecorder.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Rendering\BasicPBRGlobals.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\ColorChanger.cs" />
+    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\RotationAudioEvents.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\RespawnOnDrop.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Effects\WaterSpray\WaterSpray.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Effects\MeshBlit.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\AudioTrigger.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\EnableTargetOnStart.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HandGrabUse\Effects\WaterSpray\WaterSprayNozzleTransformer.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\StayInView.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\AudioPhysics.cs" />
-    <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\FadeTextAfterActive.cs" />
     <Compile Include="Assets\Oculus\Interaction\Samples\Scripts\HideHandVisualOnGrab.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -330,6 +330,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -338,9 +341,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>Z:\Program Files\2020.3.33f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -699,11 +699,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{0A35EBC6-5E02-5DC4-64CB-87552304231E}</Project>
+      <Project>{EF9930EA-E73A-56AA-74AA-F2B9D4AA5718}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{E5E9588D-1AE8-9AAE-C5A7-0849F56EF7F9}</Project>
+      <Project>{D1769CC4-EAC5-655A-74D5-A02FEA479339}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
   </ItemGroup>
