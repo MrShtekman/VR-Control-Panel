@@ -7,8 +7,8 @@ public class Testing : MonoBehaviour
 
     IEnumerator Move()
     {
-     
-        for (int i = 0; i <= 1000; i++)
+
+        while (true)
         {
             transform.Translate(Vector3.right * 0.01f);
             yield return new WaitForSeconds(0.5f);
@@ -21,6 +21,11 @@ public class Testing : MonoBehaviour
         if (Input.GetKeyDown("w"))
         {
             StartCoroutine(Move());
+        }
+
+        if (Input.GetKeyDown("e"))
+        {
+            StopCoroutine(Move());
         }
     }
 }

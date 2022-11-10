@@ -13,6 +13,7 @@ public class Controller : MonoBehaviour
         current = this;
     }
 
+    //////////////////////////////////////////////////////////////////////////////
     public event Action<VideoClip> onTVbuttonPressed;
     public void TVbuttonPressed(VideoClip video)
     {
@@ -21,7 +22,9 @@ public class Controller : MonoBehaviour
             onTVbuttonPressed(video);
         }
     }
-
+    
+    /// //////////////////////////////////////////////////////////////////////////
+    
     public event Action<float> onTVvolumeChanged;
     public void TVvolumeChanged(float volume)
     {
@@ -31,7 +34,27 @@ public class Controller : MonoBehaviour
         }
     }
 
+    ////////////////////////////////////////////////////////////////////////////
     public void ChangeBrightness(float brightness) => RenderSettings.skybox.SetFloat("_Exposure", brightness);
 
+
+    // Player movement ///////////////////////////////////////////////////////////
+    public event Action<float> onAltitudeChanged;
+    public void AltitudeChanged(float direction)
+    {
+        if (onAltitudeChanged != null)
+        {
+            onAltitudeChanged(direction);
+        }
+    }
+
+    public event Action onStopChange;
+    public void StopChange()
+    {
+        if (onStopChange != null)
+        {
+            onStopChange();
+        }
+    }
 
 }
