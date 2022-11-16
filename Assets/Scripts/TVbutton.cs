@@ -7,11 +7,11 @@ using UnityEngine.UI;
 public class TVbutton : MonoBehaviour
 {
     [SerializeField] private VideoClip video;
-    private Button button;
+    private Toggle toggle;
     private void Start()
     {
-        button = gameObject.GetComponent<Button>();
-        button.onClick.AddListener(OnTVbuttonPressed);
+        toggle = gameObject.GetComponent<Toggle>();
+        toggle.onValueChanged.AddListener(delegate { OnTVbuttonPressed(); });
     }
 
     

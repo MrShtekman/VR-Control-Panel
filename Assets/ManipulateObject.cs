@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ManipulateObject : MonoBehaviour
 {
     [SerializeField] private GameObject item;
+    [SerializeField] private GameObject minButton;
     [SerializeField] private MeshRenderer itemMeshRenderer;
     [SerializeField] private List<Collider> colliderList;
     [SerializeField] private Toggle invisToggle;
@@ -45,9 +46,18 @@ public class ManipulateObject : MonoBehaviour
 
     IEnumerator ChangeSize(float direction)
     {
+        
         while (true)
         {
+            /*if (item.transform.localScale.x < 0)
+                minButton.SetActive(false);
+            if (item.transform.localScale.x > 0)
+                minButton.SetActive(true);*/
+            if (item.transform.localScale.x < 0)
+                item.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+
             item.transform.localScale += transformSpeed * direction;
+            
             yield return null;
         }
     }

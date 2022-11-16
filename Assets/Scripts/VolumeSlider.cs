@@ -11,7 +11,7 @@ public class VolumeSlider : MonoBehaviour
     void Start()
     {
         slider = gameObject.GetComponent<Slider>();
-        OnTVvolumeChanged(slider.value);
+        //OnTVvolumeChanged(slider.value);
         slider.onValueChanged.AddListener(OnTVvolumeChanged);
     }
     private void OnTVvolumeChanged(float volume) => Controller.current.TVvolumeChanged(volume);

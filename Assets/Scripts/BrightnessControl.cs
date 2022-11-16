@@ -9,7 +9,7 @@ public class BrightnessControl : MonoBehaviour
     void Start()
     {
         slider = gameObject.GetComponent<Slider>();
-        OnBrightnessChange(slider.value);
+        //OnBrightnessChange(slider.value);
         slider.onValueChanged.AddListener(OnBrightnessChange);
     }
     private void OnBrightnessChange(float brightness) => Controller.current.ChangeBrightness(brightness);
