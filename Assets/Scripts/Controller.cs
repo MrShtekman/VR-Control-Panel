@@ -7,7 +7,7 @@ using System;
 public class Controller : MonoBehaviour
 {
     public static Controller current;
-    [SerializeField] private VideoClip video;
+
     private void Awake()
     {
         current = this;
